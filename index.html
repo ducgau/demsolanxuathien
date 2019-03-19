@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 6, 6, 7, 5, 5];
+    function tim(dem) {
+        for (let i = 0; i < nums.length; i++) {
+            if (nums [i] == dem) {
+                count++;
+                console.log(count);
+            }
+        }
+      return count;
+    };
+
+    let dem = parseInt(prompt("nhập số cần tìm: "));
+    tim(dem);
+    document.write("số phần tử " + dem + " là: " + count);
+</script>
+</body>
+</html>
